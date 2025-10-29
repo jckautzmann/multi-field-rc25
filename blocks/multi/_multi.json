@@ -10,7 +10,7 @@
             "template": {
               "name": "Multi",
               "model": "multi",
-              "key-value": true
+              "key-value": false
             }
           }
         }

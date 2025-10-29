@@ -10,7 +10,7 @@
             "template": {
               "name": "Multi Container",
               "model": "multicontainer",
-              "key-value": true
+              "key-value": false
             }
           }
         }
