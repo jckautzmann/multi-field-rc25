@@ -1,0 +1,255 @@
+{
+  "definitions": [
+    {
+      "title": "Multi",
+      "id": "multi",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Multi",
+              "model": "multi",
+              "key-value": true
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "multi",
+      "fields": [
+        {
+          "component": "text",
+          "name": "classes_single",
+          "label": "Block Options (Single)",
+          "description": "Style your block with class options",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "classes_multi",
+          "label": "Block Options (Multi)",
+          "description": "Style your block with class options",
+          "multi": true
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "text-simple",
+          "label": "Text simple",
+          "description": "Enter one or more texts"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "text-multi",
+          "label": "Text multi",
+          "description": "Enter one or more texts",
+          "multi": true
+        },
+        {
+          "component": "richtext",
+          "name": "richtext-simple",
+          "value": "",
+          "label": "Richtext simple",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "richtext-multi",
+          "value": "",
+          "label": "Richtext multi",
+          "valueType": "string",
+          "multi": true
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "image-link-simple",
+          "label": "Image link simple",
+          "description": "Enter one or more images"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "image-link-multi",
+          "label": "Image link multi",
+          "description": "Enter one or more images",
+          "multi": true
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "reference-simple",
+          "label": "Reference simple",
+          "description": "Select one or more images"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "reference-multi",
+          "label": "Reference multi",
+          "description": "Select one or more images",
+          "multi": true
+        },
+        {
+          "component": "aem-content",
+          "name": "aem-content-simple",
+          "label": "aem-content-simple"
+        },
+        {
+          "component": "aem-content",
+          "name": "aem-content-multi",
+          "label": "aem-content-multi",
+          "multi": true
+        },
+        {
+          "component": "date-time",
+          "label": "Date & Time simple",
+          "name": "date-simple",
+          "valueType": "date"
+        },
+        {
+          "component": "date-time",
+          "label": "Date & Time multi",
+          "name": "date-multi",
+          "valueType": "date",
+          "multi": true
+        },
+        {
+          "component": "number",
+          "name": "number-simple",
+          "label": "Number simple",
+          "valueType": "number",
+          "value": 0
+        },
+        {
+          "component": "number",
+          "name": "number-multi",
+          "label": "Number Multi",
+          "valueType": "number",
+          "value": 0,
+          "multi": true
+        },
+        {
+          "component": "aem-tag",
+          "label": "AEM Tag Picker",
+          "name": "tags",
+          "valueType": "string"
+        },
+        {
+          "component": "multiselect",
+          "name": "multiselect",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Highlight",
+              "value": "highlight"
+            },
+            {
+              "name": "Lowlight",
+              "value": "lowlight"
+            }
+          ]
+        },
+        {
+          "component": "radio-group",
+          "label": "Radio Group",
+          "name": "radio",
+          "valueType": "string",
+          "options": [
+            { "name": "Option 1", "value": "option1" },
+            { "name": "Option 2", "value": "option2" }
+          ]
+        },
+        {
+          "component": "select",
+          "label": "Select",
+          "name": "select",
+          "valueType": "string",
+          "options": [
+            { "name": "Option 1", "value": "option1" },
+            { "name": "Option 2", "value": "option2" }
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Image Container simple",
+          "description": "Select one or more images + alt text",
+          "name": "container-simple",
+          "fields" : [
+            {
+              "component": "reference",
+              "valueType": "string",
+              "name": "container-simple-image",
+              "label": "Image",
+              "description": "Select Image"
+            },
+            {
+              "component": "text",
+              "valueType": "string",
+              "name": "container-simple-imageAlt",
+              "label": "Alt",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Image Container multi",
+          "description": "Select one or more images + alt text",
+          "name": "container-multi",
+          "multi": true,
+          "fields" : [
+            {
+              "component": "reference",
+              "valueType": "string",
+              "name": "container-multi-image",
+              "label": "Image",
+              "description": "Select Image"
+            },
+            {
+              "component": "text",
+              "valueType": "string",
+              "name": "container-multi-imageAlt",
+              "label": "Alt",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "grouping_text1",
+          "label": "Text 1 (Single, grouping)",
+          "description": "Enter Text",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "grouping_text2",
+          "label": "Text 2 (Single, grouping)",
+          "description": "Enter Text",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "groupingmulti_text1",
+          "label": "Text 1 (Multi, groupingmulti)",
+          "description": "Enter Texts",
+          "multi": true
+        },
+        {
+          "component": "text",
+          "name": "groupingmulti_text2",
+          "label": "Text 2 (Multi, groupingmulti)",
+          "description": "Enter Texts",
+          "multi": true
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
